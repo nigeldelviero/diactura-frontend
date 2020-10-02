@@ -1,0 +1,164 @@
+@media screen and (max-width: 991px) {
+    .wrapper-second-navbar {
+        display: none;
+    }
+
+    .banner-homepage {
+        top: 0;
+
+        .carousel-inner {
+            height: 100%;
+        }
+    }
+
+    .series-carousel {
+        top: -183px !important;
+    }
+
+    .column__img {
+        display: none;
+    }
+
+    .column-section .column-carousel .slick-next {
+        left: 19rem !important;
+    }
+
+    .footer-wrapper {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+
+        .footer-title {
+            text-align: left !important;
+        }
+
+        .social-icons {
+            padding: 0 !important;
+        }
+    }
+
+    .animation-item {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .daftar-thumb {
+        max-width: 52px;
+        margin-bottom: .7rem;
+    }
+
+    .audio-desc {
+        max-width: 153px;
+    }
+
+    .player-section {
+        .audio-rate {
+            right: 15px;
+        }
+    }
+
+    .detail-section {
+        top: 0 !important;
+
+
+        .banner-body {
+            position: relative;
+        }
+
+        .main-body {
+            position: relative;
+
+            h2 {
+                margin-top: .8rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        .thumb-banner {
+            margin-bottom: 2rem;
+        }
+
+        .tags,
+        .diactura-rate {
+            justify-content: center;
+        }
+
+        .desc-movie {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    .daftar-banner {
+        .diactura-title {
+            font-size: 15px;
+        }
+
+        .desc-movie {
+            font-size: 9px;
+            line-height: 1.2;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        .tag-item {
+            font-size: 12px;
+            padding: .6rem;
+        }
+
+        .carousel-caption {
+            top: 5% !important;
+
+            padding-bottom: 5px !important;
+        }
+
+        .rate-item {
+            img {
+                width: 26%;
+            }
+
+            .rate {
+                font-size: 12px !important;
+            }
+        }
+
+        .rate-by-writer {
+            margin: 0;
+        }
+    }
+
+    .talk-section {
+        .banner-body {
+            position: relative;
+            top: 0;
+        }
+
+        .btn-diactura-primary {
+            margin-bottom: 15px;
+
+        }
+    }
+
+
+    .player-section {
+        .audio-title {
+            font-size: 13px !important;
+        }
+
+        .audio-author {
+            font-size: 9px !important;
+        }
+
+        i.audio-rate--icon {
+            font-size: 12px;
+        }
+
+        margin: 1.5rem 0;
+    }
+}
