@@ -39,6 +39,7 @@
   </head>
   <body>
     <!-- Navbar (start) -->
+    <!-- First Navbar -->
     <div class="wrapper-navbar">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">
@@ -58,23 +59,39 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >Blog <span class="sr-only">(current)</span></a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Blog <span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-film.html">Rating</a>
+                <a class="dropdown-item" href="daftar-film.html">News</a>
+                <a class="dropdown-item" href="detail-film.html">Review</a>
+                <a class="dropdown-item" href="daftar-film.html">Series</a>
+                <a class="dropdown-item" href="daftar-film.html">Animation</a>
+                <a class="dropdown-item" href="daftar-film.html">Column</a>
+              </div>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="talk.html">Talk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Magazine</a>
+              <a class="nav-link" href="magazine.html">Magazine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Discussion</a>
+              <a class="nav-link" href="discussions.html">Discussion</a>
             </li>
 
             <!-- Search form -->
-            <li class="nav-item ml-0">
+            <li class="nav-item ml-0 row">
               <div class="search">
                 <input type="text" placeholder="search" />
                 <div class="symbol">
@@ -96,10 +113,10 @@
                 >
                   <path
                     d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
-                    s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
-                    c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
-                    c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
-                    C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z"
+                s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
+                c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
+                c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
+                C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z"
                   />
                 </symbol>
               </svg>
@@ -117,7 +134,7 @@
     <section class="main-section talk-section">
       <div class="banner-talk">
         <img
-          src="assets/images/banner-talk.png"
+          src="./assets/images/banner-talk.png"
           class="d-block w-100 talk-banner__img"
           alt="..."
         />
@@ -132,16 +149,20 @@
               dan masih banyak lagi. Narasumber berpengalaman dan terpercaya.
             </h2>
             <div class="talk-desc--actions">
-              <button type="button" class="btn btn-diactura-primary">
-                <img src="assets/icons/spotify.svg" alt="spotify" />
-              </button>
-              <button type="button" class="btn btn-diactura-primary">
-                <img
-                  src="assets/icons/google-podcasts.svg"
-                  alt="Google Podcast"
-                />
-                Google Podcast
-              </button>
+              <a href="#" class="click-item">
+                <button type="button" class="btn btn-diactura-primary mb-md-2">
+                  <img src="./assets/icons/spotify.svg" alt="spotify" />
+                </button>
+              </a>
+              <a href="#" class="click-item">
+                <button type="button" class="btn btn-diactura-primary">
+                  <img
+                    src="./assets/icons/google-podcasts.svg"
+                    alt="Google Podcast"
+                  />
+                  Google Podcast
+                </button>
+              </a>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 talk-carousel">
@@ -252,7 +273,7 @@
         <div class="player-audio--container">
           <audio id="playerAudio" controls>
             <source
-              src="assets/audio/file_example_MP3_1MG.mp3"
+              src="./assets/audio/file_example_MP3_1MG.mp3"
               type="audio/mp3"
             />
           </audio>
@@ -297,7 +318,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -316,7 +337,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -335,7 +356,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -354,7 +375,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -373,7 +394,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -392,7 +413,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -411,7 +432,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -430,7 +451,7 @@
                       <div class="row">
                         <div class="col-12 col-sm-12 col-md-3 daftar-pic">
                           <img
-                            src="assets/images/thumbnails/daftar-thumb.png"
+                            src="./assets/images/thumbnails/daftar-thumb.png"
                             alt=""
                             class="w-100 d-block daftar-thumb"
                           />
@@ -456,7 +477,7 @@
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe
                       class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                      src="https://www.youtube.com/embed/DN8oebcXcMc?rel=0"
                       allowfullscreen
                     ></iframe>
                   </div>

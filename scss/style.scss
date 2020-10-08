@@ -43,17 +43,28 @@ body {
 
 // Homepage
 .section-wrapper {
-    margin: 4em 1.2rem;
+    margin: .5em 1.2rem;
 }
 
 .banner-homepage {
     .carousel-caption {
         text-align: left;
+        padding-bottom: 4rem;
+
 
 
         .btn-diactura-primary {
             padding: 1rem 4rem;
             margin-top: 2rem;
+        }
+
+        h1 {
+            @include fontStyle($poppins, $bold, $netral, none);
+        }
+
+        p {
+            @include fontStyle($mulish, $regular, $netral, none);
+            opacity: 0.4;
         }
 
     }
@@ -65,12 +76,12 @@ body {
     .slick-prev {
         left: 0;
         z-index: 1;
-        top: 11rem;
+        top: 25%;
     }
 
     .slick-next {
         z-index: 1;
-        top: 11rem;
+        top: 25%;
         right: 0;
     }
 
@@ -126,7 +137,8 @@ body {
 }
 
 .news-section {
-    margin: 4em 0;
+    margin: 0;
+    position: relative;
 
     .blog-thumb {
         img {
@@ -297,12 +309,10 @@ body {
 }
 
 .series-section {
+    position: relative;
+
     .blog-section--header {
         margin: 0 1.2rem;
-    }
-
-    .series-wrapper {
-        outline: none;
     }
 
     .slick-prev {
@@ -333,6 +343,7 @@ body {
         margin-right: 15px;
         width: 100%;
         max-width: 310px;
+        outline: none;
 
         &:hover {
             .btn-diactura-primary {
@@ -408,6 +419,9 @@ body {
 
         .series-banner {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
 
         &:before {
@@ -423,6 +437,12 @@ body {
             z-index: 1;
         }
     }
+
+
+}
+
+.wrapper-navbar .dropdown-toggle::after {
+    display: none;
 }
 
 .animation-section {
@@ -483,38 +503,28 @@ body {
 
     .column-carousel {
         .slick-prev {
-            left: 0;
+            left: 2.5%;
             width: 50px;
             height: 50px;
             z-index: 1;
-            top: 8rem;
+            top: 35%;
         }
 
         .slick-next {
-            left: 37rem;
             height: 50px;
             width: 50px;
-            top: 8rem;
+            top: 35%;
+            right: 2.5%;
         }
     }
 
     .column-carousel-item {
-        width: 100%;
-        max-width: 276px;
-        margin-right: 0.9rem;
-
-        .carousel-item__img {
-            width: 100%;
-            max-width: 276px;
-        }
+        margin: 0 1rem;
+        width: 286px;
     }
 
     .carousel-item__title {
         margin: 1rem 0;
-    }
-
-    .column-wrapper {
-        margin-right: 1rem;
     }
 
 
@@ -682,15 +692,15 @@ body {
     @include linearBackground(-30%);
 }
 
-.talk-section {
-    .banner-body {
-        top: 13em;
-    }
+.talk-banner__img {
+    height: 482px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .banner-body {
-    position: absolute;
-    top: 20em;
+    position: relative;
+    top: -51px;
     z-index: 1;
 
     // .talk-desc {
@@ -701,25 +711,32 @@ body {
     // }
 
     .talks {
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            top: 82%;
+            left: -37%;
+            right: 0;
+
+        }
+
         .slick-next {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             position: relative;
-            left: 35rem;
-            top: 50px;
+            left: 86%;
+            bottom: 0;
         }
 
         .slick-prev {
-            width: 60px;
-            z-index: 1;
-            height: 60px;
-            position: relative;
-            left: 30rem;
-            top: 261px;
-        }
-
-        .slick-dots {
-            left: -15em;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 77%;
+            border: 0;
+            top: 200px;
+            bottom: 0;
+            right: 0;
         }
     }
 
@@ -747,7 +764,7 @@ body {
 
     .slick-prev {
         width: 60px;
-        z-index: 1;
+        // z-index: 1;
         height: 60px;
         position: relative;
         left: 31rem;
@@ -838,7 +855,7 @@ body {
         right: 0;
         bottom: 0;
         background: linear-gradient(to left, rgba(227, 26, 32, 0.5) 5.1%, rgba(227, 26, 32, 0) 100%);
-        z-index: 1;
+        // z-index: 1;
         max-width: 245px;
         width: 100%;
         height: auto;
@@ -866,7 +883,7 @@ body {
 
 .title-talk-carousel {
     @include fontStyle($poppins, $regular, $netral, none);
-    margin: 0 0 1.1rem 1rem;
+    margin: 1rem 0 1rem 2rem;
     font-size: 1.5rem;
 }
 
@@ -1547,6 +1564,16 @@ button.btn-lg {
 /* magazine end */
 
 /* discussions section */
+.new-post-section {
+    .diactura-title {
+        color: $secondary;
+    }
+
+    .bg-light {
+        background-color: $netral !important;
+    }
+}
+
 .card.new-post {
     margin: 10px 25px;
 }
@@ -1688,3 +1715,75 @@ img.ptj {
 }
 
 /* discussions end */
+
+
+.responsive--banner {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.thumbnail--img {
+    width: 100%;
+
+    height: 340px;
+    object-fit: cover;
+    border-radius: 7px;
+    object-position: center;
+}
+
+.click-item {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        color: $netral;
+    }
+}
+
+.rating-section {
+    margin-bottom: 2rem;
+
+    .slick-next,
+    .slick-prev {
+        top: 37%;
+    }
+
+    .carousel-item__img {
+        margin-bottom: .9rem;
+    }
+
+    .thumbnail--img {
+        height: 400px;
+    }
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+.wrapper-second-navbar {
+    z-index: 12;
+}
+
+.wrapper-navbar {
+    .dropdown-menu {
+        background-color: #000;
+    }
+}
+
+.news-title-container {
+    position: absolute;
+    top: 60%;
+}
+
+.diactura-para {
+    @include fontStyle($mulish, $regular, $netral, none);
+    line-height: 1.6;
+}
+
+.diactura-subtitle {
+    @include fontStyle($poppins, $semi-bold, $netral, none);
+    margin-bottom: .7rem;
+}

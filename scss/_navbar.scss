@@ -5,6 +5,10 @@
 }
 
 .wrapper-navbar {
+    .dropdown-menu {
+        background-color: transparent;
+    }
+
     .navbar {
         background-color: $secondary;
         padding-bottom: 0;
@@ -34,7 +38,7 @@
         }
 
         .active {
-            a::after {
+            a::before {
                 border-bottom: 3px solid $primary;
                 border-radius: 25px;
                 bottom: -18px;
@@ -54,7 +58,7 @@
 
     .navbar {
         background-color: $secondary;
-        opacity: 0.6;
+        opacity: 0.75;
         padding: 0;
     }
 

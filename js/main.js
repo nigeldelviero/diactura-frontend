@@ -8,9 +8,9 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     responsive: [
       {
         breakpoint: 1024,
@@ -49,9 +49,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     responsive: [
       {
         breakpoint: 1024,
@@ -93,19 +93,12 @@ $(document).ready(function () {
     nextArrow: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
         },
       },
       {
@@ -129,20 +122,11 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
-    variableWidth: true,
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+    variableWidth: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
       {
         breakpoint: 991,
         settings: {
@@ -179,23 +163,31 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+    variableWidth: true,
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
   });
 
   // Talks carousel
-  //   Reviews carousel
   $('.talks ').slick({
     dots: true,
     infinite: true,
@@ -203,9 +195,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     variableWidth: true,
     centerMode: true,
     responsive: [
@@ -246,9 +238,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     variableWidth: true,
     responsive: [
       {
@@ -287,9 +279,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     responsive: [
       {
         breakpoint: 1024,
@@ -375,9 +367,9 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       {
@@ -386,9 +378,9 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       {
@@ -397,9 +389,9 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       // You can unslick at a given breakpoint now by adding:
@@ -415,9 +407,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
-      "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
     nextArrow:
-      "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+      "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
     variableWidth: true,
     responsive: [
       {
@@ -426,9 +418,9 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       {
@@ -437,9 +429,9 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       {
@@ -448,9 +440,9 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           prevArrow:
-            "<img src='../assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-left.svg' class='slick-custom slick-prev slick-arrow'>",
           nextArrow:
-            "<img src='../assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
+            "<img src='./assets/icons/chevron-circle-right.svg' class='slick-custom slick-next slick-arrow'>",
         },
       },
       // You can unslick at a given breakpoint now by adding:
@@ -458,11 +450,17 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+  $('a.nav-link.dropdown-toggle').click(function () {
+    location.href = this.href;
+  });
 });
 
 // Plyr
-const player = new Plyr('#animation-player');
-const playerAudio = new Plyr('#playerAudio');
-const players = Array.from(document.querySelectorAll('.js-player')).map(
-  (p) => new Plyr(p)
-);
+var player = new Plyr('#animation-player');
+var playerAudio = new Plyr('#playerAudio');
+var players = Array.from(document.querySelectorAll('.js-player')).map(function (
+  p
+) {
+  return new Plyr(p);
+});

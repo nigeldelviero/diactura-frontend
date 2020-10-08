@@ -59,23 +59,39 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Blog <span class="sr-only">(current)</span></a
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Blog <span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-film.html">Rating</a>
+                <a class="dropdown-item" href="daftar-film.html">News</a>
+                <a class="dropdown-item" href="detail-film.html">Review</a>
+                <a class="dropdown-item" href="daftar-film.html">Series</a>
+                <a class="dropdown-item" href="daftar-film.html">Animation</a>
+                <a class="dropdown-item" href="daftar-film.html">Column</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="talk.html">Talk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Magazine</a>
+              <a class="nav-link" href="magazine.html">Magazine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Discussion</a>
+              <a class="nav-link" href="discussions.html">Discussion</a>
             </li>
 
             <!-- Search form -->
-            <li class="nav-item ml-0">
+            <li class="nav-item ml-0 row">
               <div class="search">
                 <input type="text" placeholder="search" />
                 <div class="symbol">
@@ -118,160 +134,138 @@
       <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"> Rating </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="daftar-film.html"> Rating </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Review</a>
+            <a class="nav-link" href="daftar-film.html">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Series</a>
+            <a class="nav-link" href="detail-film.html">Review</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Animation</a>
+            <a class="nav-link" href="daftar-film.html">Series</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Column</a>
+            <a class="nav-link" href="daftar-film.html">Animation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daftar-film.html">Column</a>
           </li>
         </ul>
       </nav>
     </div>
     <!-- Navbar (end) -->
 
-    <div id="wrapper">
-      <!-- content start -->
-      <section class="news-section">
-        <div class="banner-blur">
-          <img
-            src="assets/images/Banner 1.png"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="container-fluid">
-          <h1 class="diactura-title">
-            Tayang Saat Wabah Corona, Peninsula Tembus Sejuta Penonton dalam 4
-            Hari
-          </h1>
+    <section class="news-section">
+      <div class="banner-blur banner-homepage">
+        <img src="./assets/images/Banner 1.png" class="d-block" alt="..." />
+      </div>
+      <div class="news-title-container mx-3">
+        <h1 class="diactura-title">
+          Tayang Saat Wabah Corona, Peninsula Tembus Sejuta Penonton dalam 4
+          Hari
+        </h1>
 
-          <p class="talk-desc__author">Terry Laksana - 20 Juli 2020</p>
-        </div>
-      </section>
+        <p class="talk-desc__author">Terry Laksana - 20 Juli 2020</p>
+      </div>
+    </section>
 
-      <section>
-        <div class="news-inner">
-          <div class="container">
-            <div class="row">
-              <div class="col col-sm-6 col-md-9">
-                <div class="card news1">
-                  <div class="card-body">
-                    <p class="news-text">
-                      Industri perfilman Korea Selatan pelan-pelan bangkit
-                      kembali<br /><br />Dilansir dari Doompi, pada Sabtu
-                      (18/7/2020), Lembaga Perfilman Korea mengumumkan bahwa
-                      Peninsula telah mencapai 1 juta penonton. Padahal, film
-                      ini baru dirilis pada 15 juli, ditengah pandemi Corona
-                      Covid-19<br /><br />Data tepatnya, pada tanggal 18 Juli
-                      pukul 8 pagi Peninsula telah mengumpulkan 1.000.790
-                      pemirsa.
-                    </p>
-                    <br />
+    <section class="news-content my-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-8">
+            <p class="diactura-para mb-2">
+              Industri perfilman Korea Selatan pelan-pelan bangkit kembali.
+              <br /><br />
+              Dilansir dari Soompi, pada Sabtu (18/7/2020), Lembaga Perfilman
+              Korea mengumumkan bahwa Peninsula telah mencapai 1 juta penonton.
+              Padahal, film ini baru dirilis pada 15 Juli lalu, di tengah
+              pandemi Corona Covid-19.
+              <br /><br />
+              Data tepatnya, pada tanggal 18 Juli pukul 8 pagi Peninsula telah
+              mengumpulkan 1.000.790 pemirsa.
+            </p>
+            <h4 class="diactura-subtitle mt-5">Samai Rekor Ode to My Father</h4>
+            <img
+              src="./assets/images/thumbnails/Peninsula-Photos-Train-To-Busan-2 1.png"
+              alt=""
+              class="img-fluid my-2"
+            />
+            <p class="diactura-para">
+              Lebih menariknya lagi, Peninsula menyamai rekor film sukses Ode to
+              My Father yang rilis pada 2014 silam.
+              <br /><br />
+              Film tersebut hingga kini memegang rekor sebagai film dengan
+              pendapatan kotor terbesar keempat di sejarah perfilman Korea
+              Selatan, dengan 14,2 juta penonton.
+            </p>
+            <h4 class="diactura-subtitle mt-5">Hari Pertama Penayangan</h4>
+            <p class="diactura-para">
+              Sebelumnya telah diungkapkan bahwa Peninsula akan mengambil
+              setting Korea Selatan, empat tahun setelah ledakan wabah zombie di
+              Train to Busan.
+              <br /><br />
+              Peninsula berpusat kepada sekelompok orang yang tersisa dan harus
+              bertahan hidup di tengah dunia yang mulai hancur.
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="card mb-4 top-news">
+              <h5 class="card-title text-uppercase top-news">Top News</h5>
+              <img
+                src="./assets/images/Berita1 1.png"
+                alt=""
+                class="card-img jyunghyun"
+              />
+              <h6 class="card-subtitle text-capitalize top-news">
+                Lee Jung Hyun Tanggapi Prestasi Menakjubkan 'Peninsula', Puji
+                Habis-Habisan Kang Dong Won
+              </h6>
+              <p class="top-news-text">Terry Laksana - 19 Juli 2020</p>
+            </div>
 
-                    <h5 class="card-title news1">
-                      Samai Rekor Ode to My Father
-                    </h5>
-                    <br />
-                    <img
-                      src="assets/images/thumbnails/Peninsula-Photos-Train-To-Busan-2 1.png"
-                      alt=""
-                      class="card-img peninsula"
-                    />
-                    <p class="news-text">
-                      <br />Lebih menariknya lagi, Peninsula menyamai rekor film
-                      sukses Ode to My Father yang dirilis pada 2014 silam.<br /><br />Film
-                      tersebut hinga kini memegang rekor sebagai film dengan
-                      pendapatan kotor terbesar keempat di sejarah perfilman
-                      Korea Selatan, dengan 14,2 juta penonton.
-                    </p>
-                    <br />
+            <div class="card border-bottom mb-2 other-news-lead">
+              <h5 class="card-title text-uppercase other-news-lead">
+                Berita Lainnya
+              </h5>
+              <img
+                src="./assets/images/ptj/Berita2 1.png"
+                alt=""
+                class="card-img ptj"
+              />
+              <h6 class="card-subtitle text-capitalize other-news">
+                Joko Anwar Disebut Bikin Film Horor Sampah,'PTJ' Kembali
+                Menangkan Penghargaan International
+              </h6>
+              <p class="other-news-text">Diana Oktaviani - 20 Juli 2020</p>
+            </div>
 
-                    <h5 class="card-title news1">Hari Pertama Penayangan</h5>
-                    <br />
-                    <p class="news-text">
-                      Sebelumnya telah diungkapkan bahwa Peninsula akan
-                      mengambil setting Korea Selatan, empat tahun setelah
-                      ledakan wabah zombie di Train to Busan.<br /><br />Peninsula
-                      berpusat kepada kelompok orang yang tersisa dan harus
-                      bertahan hidup di tengah dunia yang mulai hancur.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="card border-bottom mb-2 other-news">
+              <h6 class="card-subtitle text-capitalize other-news">
+                Film 'Deliver Us From Evil' Tembus Sejuta Penonton Hanya Dalam 4
+                Hari Penayangan
+              </h6>
+              <p class="other-news-text">Diana Oktaviani - 15 Juli 2020</p>
+            </div>
 
-              <div class="col col-sm-6 col-md-3">
-                <div class="card mb-4 top-news">
-                  <h5 class="card-title text-uppercase top-news">Top News</h5>
-                  <img
-                    src="assets/images/Berita1 1.png"
-                    alt=""
-                    class="card-img jyunghyun"
-                  />
-                  <h6 class="card-subtitle text-capitalize top-news">
-                    Lee Jung Hyun Tanggapi Prestasi Menakjubkan 'Peninsula',
-                    Puji Habis-Habisan Kang Dong Won
-                  </h6>
-                  <p class="top-news-text">Terry Laksana - 19 Juli 2020</p>
-                </div>
+            <div class="card border-bottom mb-2 other-news">
+              <h6 class="card-subtitle text-capitalize other-news">
+                Daftar Lengkap Drama Korea Terbaru Tayang September
+              </h6>
+              <p class="other-news-text">Diana Oktaviani - 1 September 2020</p>
+            </div>
 
-                <div class="card border-bottom mb-2 other-news-lead">
-                  <h5 class="card-title text-uppercase other-news-lead">
-                    Berita Lainnya
-                  </h5>
-                  <img
-                    src="assets/images/ptj/Berita2 1.png"
-                    alt=""
-                    class="card-img ptj"
-                  />
-                  <h6 class="card-subtitle text-capitalize other-news">
-                    Joko Anwar Disebut Bikin Film Horor Sampah,'PTJ' Kembali
-                    Menangkan Penghargaan International
-                  </h6>
-                  <p class="other-news-text">Diana Oktaviani - 20 Juli 2020</p>
-                </div>
-
-                <div class="card border-bottom mb-2 other-news">
-                  <h6 class="card-subtitle text-capitalize other-news">
-                    Film 'Deliver Us From Evil' Tembus Sejuta Penonton Hanya
-                    Dalam 4 Hari Penayangan
-                  </h6>
-                  <p class="other-news-text">Diana Oktaviani - 15 Juli 2020</p>
-                </div>
-
-                <div class="card border-bottom mb-2 other-news">
-                  <h6 class="card-subtitle text-capitalize other-news">
-                    Daftar Lengkap Drama Korea Terbaru Tayang September
-                  </h6>
-                  <p class="other-news-text">
-                    Diana Oktaviani - 1 September 2020
-                  </p>
-                </div>
-
-                <div class="card mb-2 other-news">
-                  <h6 class="card-subtitle text-capitalize other-news">
-                    Film 'Deliver Us From Evil' Tembus Sejuta Penonton Hanya
-                    Dalam 4 Hari Penayangan
-                  </h6>
-                  <p class="other-news-text">Diana Oktaviani - 15 Juli 2020</p>
-                </div>
-              </div>
+            <div class="card mb-2 other-news">
+              <h6 class="card-subtitle text-capitalize other-news">
+                Film 'Deliver Us From Evil' Tembus Sejuta Penonton Hanya Dalam 4
+                Hari Penayangan
+              </h6>
+              <p class="other-news-text">Diana Oktaviani - 15 Juli 2020</p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- content end -->
-    </div>
+      </div>
+    </section>
 
     <!-- Footer (start) -->
     <footer class="footer-section">

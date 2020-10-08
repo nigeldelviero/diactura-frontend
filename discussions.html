@@ -59,23 +59,39 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Blog <span class="sr-only">(current)</span></a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Blog <span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-film.html">Rating</a>
+                <a class="dropdown-item" href="daftar-film.html">News</a>
+                <a class="dropdown-item" href="detail-film.html">Review</a>
+                <a class="dropdown-item" href="daftar-film.html">Series</a>
+                <a class="dropdown-item" href="daftar-film.html">Animation</a>
+                <a class="dropdown-item" href="daftar-film.html">Column</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="talk.html">Talk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Magazine</a>
+              <a class="nav-link" href="magazine.html">Magazine</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Discussion</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="discussions.html">Discussion</a>
             </li>
 
             <!-- Search form -->
-            <li class="nav-item ml-0">
+            <li class="nav-item ml-0 row">
               <div class="search">
                 <input type="text" placeholder="search" />
                 <div class="symbol">
@@ -130,13 +146,15 @@
                 ></textarea>
                 <div class="btn-group new-post">
                   <button class="btn paperclip" type="button">
-                    <span><img src="assets/icon/paperclip.svg" alt="" /></span>
+                    <span
+                      ><img src="./assets/icon/paperclip.svg" alt=""
+                    /></span>
                   </button>
                   <button class="btn image" type="button">
-                    <span><img src="assets/icon/image.svg" alt="" /></span>
+                    <span><img src="./assets/icon/image.svg" alt="" /></span>
                   </button>
                   <button class="btn submit" type="button">
-                    <span><img src="assets/icon/submit.svg" alt="" /></span>
+                    <span><img src="./assets/icon/submit.svg" alt="" /></span>
                   </button>
                 </div>
               </form>
@@ -166,7 +184,7 @@
       <div class="card magazine mb-4">
         <div class="row comment">
           <div class="col col-sm-1 col-md-2">
-            <img src="assets/images/avatars/Photo.png" alt="" />
+            <img src="./assets/images/avatars/Photo.png" alt="" />
           </div>
           <div class="col col-sm-2 col-md-3">
             <div class="card-block px-2">
@@ -189,19 +207,21 @@
           <div class="row footer">
             <div class="col col-lg-2">
               <button class="btn" type="button">
-                <img src="assets/icon/popcorn (1) 1.svg" alt="" /><span>
+                <img src="./assets/icon/popcorn (1) 1.svg" alt="" /><span>
                   42
                 </span>
               </button>
             </div>
             <div class="col">
               <button class="btn" type="button">
-                <img src="assets/icon/Vector.svg" alt="" /><span> 9 </span>
+                <img src="./assets/icon/Vector.svg" alt="" /><span> 9 </span>
               </button>
             </div>
             <div class="col-md-auto">
               <button class="btn" type="button">
-                <img src="assets/icon/share-2.svg" alt="" /><span> SHARE </span>
+                <img src="./assets/icon/share-2.svg" alt="" /><span>
+                  SHARE
+                </span>
               </button>
             </div>
           </div>
@@ -211,7 +231,7 @@
       <div class="card magazine mb-4">
         <div class="row comment">
           <div class="col col-sm-1 col-md-2">
-            <img src="assets/images/avatars/Photo2.png" alt="" />
+            <img src="./assets/images/avatars/Photo2.png" alt="" />
           </div>
           <div class="col col-sm-2 col-md-3">
             <div class="card-block px-2">
@@ -223,26 +243,28 @@
             <p class="card-text">
               Bagaimana pendapatmu mengenai film terbaru dari joko anwar?
             </p>
-            <img class="ptj" src="assets/images/ptj/P 1.png" alt="" />
+            <img class="ptj" src="./assets/images/ptj/P 1.png" alt="" />
           </div>
         </div>
         <div class="card-footer">
           <div class="row footer">
             <div class="col col-lg-2">
               <button class="btn" type="button">
-                <img src="assets/icon/popcorn (1) 1.svg" alt="" /><span>
+                <img src="./assets/icon/popcorn (1) 1.svg" alt="" /><span>
                   12
                 </span>
               </button>
             </div>
             <div class="col">
               <button class="btn" type="button">
-                <img src="assets/icon/Vector.svg" alt="" /><span> 3 </span>
+                <img src="./assets/icon/Vector.svg" alt="" /><span> 3 </span>
               </button>
             </div>
             <div class="col-md-auto">
               <button class="btn" type="button">
-                <img src="assets/icon/share-2.svg" alt="" /><span> SHARE </span>
+                <img src="./assets/icon/share-2.svg" alt="" /><span>
+                  SHARE
+                </span>
               </button>
             </div>
           </div>
@@ -253,7 +275,7 @@
         <div class="row comment">
           <div class="col col-sm-1 col-md-2">
             <img
-              src="assets/images/avatars/Photo3.png"
+              src="./assets/images/avatars/Photo3.png"
               alt=""
               class="mx-auto"
             />
@@ -269,26 +291,26 @@
               Siapa tau ada yang ingin, gua lampirkan poster film terbaru nih
             </p>
             <div class="download-poster border rounded">
-              <img class="poster-file" src="assets/icon/Group.svg" alt="" />
+              <img class="poster-file" src="./assets/icon/Group.svg" alt="" />
               <div class="poster-caption">
                 <h5>Poster Terbaru Mulan</h5>
                 <p>PDF file, 324 kb</p>
               </div>
               <img
                 class="cloud-download"
-                src="assets/icon/download-cloud.svg"
+                src="./assets/icon/download-cloud.svg"
                 alt=""
               />
             </div>
             <div class="download-poster border rounded">
-              <img class="poster-file" src="assets/icon/Group.svg" alt="" />
+              <img class="poster-file" src="./assets/icon/Group.svg" alt="" />
               <div class="poster-caption">
                 <h5>Poster Terbaru Jumanji</h5>
                 <p>PDF file, 245 kb</p>
               </div>
               <img
                 class="cloud-download"
-                src="assets/icon/download-cloud.svg"
+                src="./assets/icon/download-cloud.svg"
                 alt=""
               />
             </div>
@@ -298,19 +320,21 @@
           <div class="row footer">
             <div class="col col-lg-2">
               <button class="btn" type="button">
-                <img src="assets/icon/popcorn (1) 1.svg" alt="" /><span>
+                <img src="./assets/icon/popcorn (1) 1.svg" alt="" /><span>
                   89
                 </span>
               </button>
             </div>
             <div class="col">
               <button class="btn" type="button">
-                <img src="assets/icon/Vector.svg" alt="" /><span> 7 </span>
+                <img src="./assets/icon/Vector.svg" alt="" /><span> 7 </span>
               </button>
             </div>
             <div class="col-md-auto">
               <button class="btn" type="button">
-                <img src="assets/icon/share-2.svg" alt="" /><span> SHARE </span>
+                <img src="./assets/icon/share-2.svg" alt="" /><span>
+                  SHARE
+                </span>
               </button>
             </div>
           </div>
@@ -320,7 +344,7 @@
       <div class="card magazine mb-4">
         <div class="row comment">
           <div class="col col-sm-1 col-md-2">
-            <img src="assets/images/avatars/Photo4.png" alt="" />
+            <img src="./assets/images/avatars/Photo4.png" alt="" />
           </div>
           <div class="col col-sm-2 col-md-3">
             <div class="card-block px-2">
@@ -342,19 +366,21 @@
           <div class="row footer">
             <div class="col col-lg-2">
               <button class="btn" type="button">
-                <img src="assets/icon/popcorn (1) 1.svg" alt="" /><span>
+                <img src="./assets/icon/popcorn (1) 1.svg" alt="" /><span>
                   10
                 </span>
               </button>
             </div>
             <div class="col">
               <button class="btn" type="button">
-                <img src="assets/icon/Vector.svg" alt="" /><span> 0 </span>
+                <img src="./assets/icon/Vector.svg" alt="" /><span> 0 </span>
               </button>
             </div>
             <div class="col-md-auto">
               <button class="btn" type="button">
-                <img src="assets/icon/share-2.svg" alt="" /><span> SHARE </span>
+                <img src="./assets/icon/share-2.svg" alt="" /><span>
+                  SHARE
+                </span>
               </button>
             </div>
           </div>

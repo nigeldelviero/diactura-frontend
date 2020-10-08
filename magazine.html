@@ -59,23 +59,39 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Blog <span class="sr-only">(current)</span></a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Blog <span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-film.html">Rating</a>
+                <a class="dropdown-item" href="daftar-film.html">News</a>
+                <a class="dropdown-item" href="detail-film.html">Review</a>
+                <a class="dropdown-item" href="daftar-film.html">Series</a>
+                <a class="dropdown-item" href="daftar-film.html">Animation</a>
+                <a class="dropdown-item" href="daftar-film.html">Column</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="talk.html">Talk</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Magazine</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="magazine.html">Magazine</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Discussion</a>
+              <a class="nav-link" href="discussions.html">Discussion</a>
             </li>
 
             <!-- Search form -->
-            <li class="nav-item ml-0">
+            <li class="nav-item ml-0 row">
               <div class="search">
                 <input type="text" placeholder="search" />
                 <div class="symbol">
@@ -115,23 +131,31 @@
     <!-- Navbar (end) -->
 
     <!-- content start -->
-    <section class="left-image-container">
-      <div class="left-image">
-        <img src="assets/images/coming soon/COMING.png" alt="magazine1" />
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-sm-12 mr-md-2 mr-lg-2 w-100 text-left">
+          <img
+            src="./assets/images/coming soon/COMING.png"
+            alt="magazine1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-12 col-sm-12 ml-md-2 ml-lg-2 w-100 text-right">
+          <img
+            src="./assets/images/coming soon/Group 19.png"
+            alt="magazine2"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-12 col-sm-12 w-100 d-block text-center">
+          <img
+            src="./assets/images/coming soon/Asset 1 1.svg"
+            alt="magazine3"
+            class="img-fluid"
+          />
+        </div>
       </div>
-    </section>
-
-    <section class="right-image-container">
-      <div class="right-image">
-        <img src="assets/images/coming soon/Group 19.png" alt="magazine2" />
-      </div>
-    </section>
-
-    <section class="center-image-container">
-      <div class="center-image">
-        <img src="assets/images/coming soon/Asset 1 1.svg" alt="magazine3" />
-      </div>
-    </section>
+    </div>
 
     <div class="container">
       <div class="row">

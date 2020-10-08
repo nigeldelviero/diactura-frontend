@@ -12,15 +12,13 @@
     }
 
     .series-carousel {
-        top: -183px !important;
+        // top: -183px !important;
+        top: 0 !important;
+        padding: 6rem 0;
     }
 
     .column__img {
         display: none;
-    }
-
-    .column-section .column-carousel .slick-next {
-        left: 19rem !important;
     }
 
     .footer-wrapper {
@@ -134,11 +132,6 @@
     }
 
     .talk-section {
-        .banner-body {
-            position: relative;
-            top: 0;
-        }
-
         .btn-diactura-primary {
             margin-bottom: 15px;
 
@@ -160,5 +153,70 @@
         }
 
         margin: 1.5rem 0;
+    }
+
+    .wrapper-navbar .navbar-nav .active a::before {
+        bottom: 0;
+    }
+
+    .series-section .series-body .series-banner {
+        position: absolute;
+    }
+
+    .banner-homepage .carousel-item .carousel-caption {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .banner-homepage {
+        .carousel-indicators {
+            margin: auto 0;
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+    }
+
+
+    .news-section .blog-news .blog-news-wrapper h1 {
+        font-size: 1.5rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .reviews-section {
+        margin-top: 4rem !important;
+        margin-bottom: 4rem !important;
+
+        .desc-body {
+            padding-top: 1.2rem !important;
+            padding-bottom: 1.2rem !important;
+        }
+
+        .drops {
+            margin: 1rem 0 !important;
+        }
+    }
+
+    .banner-body .talks .slick-dots {
+        left: -30% !important;
+    }
+
+    .banner-body .talks .slick-prev {
+        left: 73% !important;
+    }
+
+
+    .talk-section {
+        .banner-body {
+            top: 0;
+        }
+    }
+
+    .news-title-container {
+        .diactura-title {
+            font-size: 1.5rem;
+            width: 100%;
+            line-height: 1.4;
+        }
     }
 }
